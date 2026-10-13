@@ -472,6 +472,43 @@
   /* ── HOVER EFFECT on entire row ── */
   .event-card:hover .event-name { color: #5a3800; }
 </style>
+<style> 標籤）貼在 </head> 的正上方
+     ============================================================ -->
+<style>
+  /* ── VBC 維也納銅管樂團 ── */
+  .tag-vbc { color: #b5651d; border-color: #b5651d; }
+
+  /* 苗栗場專屬優惠碼說明框 */
+  .vbc-code-box {
+    display: flex; align-items: center; gap: 1.2rem;
+    border: 1px solid rgba(201,168,76,0.45);
+    background: rgba(201,168,76,0.06);
+    padding: 0.9rem 1.1rem; margin: 0.2rem 0 1rem;
+    border-radius: 2px; max-width: 520px;
+  }
+  .vbc-code-pct {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.9rem; line-height: 1; color: var(--gold);
+    white-space: nowrap;
+  }
+  .vbc-code-text { font-size: 0.78rem; line-height: 1.8; color: rgba(26,18,8,0.65); }
+  .vbc-code-text b {
+    font-family: 'Playfair Display', serif; font-size: 0.95rem;
+    letter-spacing: 0.12em; color: var(--ink);
+    border-bottom: 1px solid var(--gold);
+  }
+
+  /* 其他巡演場次的小字提示 */
+  .vbc-more {
+    font-size: 0.75rem; letter-spacing: 0.08em;
+    color: rgba(26,18,8,0.45); padding: 1.4rem 0 0;
+  }
+
+  @media (max-width: 640px) {
+    .vbc-code-box { flex-direction: column; align-items: flex-start; gap: 0.3rem; }
+    .vbc-code-pct { font-size: 1.6rem; }
+  }
+</style>
 </head>
 <body>
 
@@ -490,6 +527,71 @@
   <a href="#events" style="font-size:0.75rem; letter-spacing:0.3em; color:rgba(255,255,255,0.45); text-decoration:none; text-transform:uppercase;">向下探索</a>
   <span class="scroll-arrow"></span>
 </section>
+
+<!-- UPCOMING -->
+<div class="section">
+  <p class="section-label">即將登場</p>
+  <h2 class="section-title">來自維也納的銅管聲響，<br>十二月在苗北響起。</h2>
+</div>
+
+<div class="strip"></div>
+
+<div class="section" style="padding-top: 2rem;">
+  <div class="events-grid">
+
+    <!-- 前導講座 11/7 -->
+    <a class="event-card" href="https://www.miaobeiac.org/mod/course/index.php?REQUEST_ID=SAJTHC1UVXxKWXA2XS9BWQ1TBkg" target="_blank">
+      <div class="event-date-col">
+        <span class="event-month">Nov</span>
+        <span class="event-day">07</span>
+        <span class="event-weekday">六曜</span>
+        <img class="event-poster" src="vbc-lecture.jpg" alt="名家交響篇III 講者許双亮">
+      </div>
+      <div class="event-body">
+        <span class="event-tag tag-lecture">音樂會前導講座 · 免費</span>
+        <h3 class="event-name">哈布斯堡的金色餘暉：維也納銅管的古典與浪漫</h3>
+        <p class="event-subtitle">名家交響篇 III ── 講師：許双亮（真理大學音樂應用學系 副教授）<br>維也納的銅管聲音為什麼特別？從哈布斯堡王朝時期的中音長號談起，聊到維也納愛樂獨有的樂器與音色。聽完再進音樂廳，耳朵會更靈。</p>
+        <div class="event-meta">
+          <span>🕙 10:00–12:00</span>
+          <span>📍 苗北藝文中心 視聽中心</span>
+          <span>🎟 免費線上報名・限額 100 人</span>
+        </div>
+      </div>
+    </a>
+
+    <!-- 維也納銅管樂團 12/11 -->
+    <a class="event-card" href="https://www.opentix.life/event/2076489805923938305" target="_blank">
+      <div class="event-date-col">
+        <span class="event-month">Dec</span>
+        <span class="event-day">11</span>
+        <span class="event-weekday">五曜</span>
+        <img class="event-poster" src="vbc-poster.jpg" alt="維也納銅管樂團《LIVE》2026台灣巡演 苗栗場海報">
+      </div>
+      <div class="event-body">
+        <span class="event-tag tag-vbc">國際名團 · 苗北藝術節</span>
+        <h3 class="event-name">維也納銅管樂團《LIVE》2026 台灣巡演</h3>
+        <p class="event-subtitle">Vienna Brass Connection ── 指揮：約翰內斯・卡夫卡（Johannes Kafka）<br>團員來自維也納愛樂、維也納國家歌劇院、維也納交響樂團。從《星際爭霸戰》、《藍色狂想曲》到蕭士塔高維契，大編制銅管加上打擊樂，把電影配樂與交響經典一次吹響。</p>
+        <div class="vbc-code-box">
+          <div class="vbc-code-pct">7折</div>
+          <div class="vbc-code-text">
+            苗栗場專屬優惠碼 <b>VBC</b><br>
+            OPENTIX 購票時選擇「演出單位－維也納銅管樂團」方案，輸入代碼即可
+          </div>
+        </div>
+        <div class="event-meta">
+          <span>🕢 19:30</span>
+          <span>📍 苗北藝文中心 演藝廳</span>
+          <span>🎟 OPENTIX 購票</span>
+        </div>
+      </div>
+    </a>
+
+  </div>
+  <!-- 台北、新竹場不需要放的話，刪掉下面這一行即可 -->
+  <p class="vbc-more">✦ 同系列巡演另有 12/12 台北場、12/13 新竹場，詳情請洽各場館。</p>
+</div>
+
+<div class="strip"></div>
 
 <!-- EVENTS -->
 <div class="section">
@@ -686,6 +788,11 @@
       </p>
     </div>
     <div class="discount-cards">
+      <div class="discount-card">
+        <div class="discount-pct">7折</div>
+        <div class="discount-label">維也納銅管樂團・苗栗場專屬優惠碼「VBC」</div>
+        <div class="discount-deadline">限 12/11 苗栗場 · OPENTIX 輸入代碼</div>
+      </div>
       <div class="discount-card">
         <div class="discount-pct">79折</div>
         <div class="discount-label">早鳥套票優惠（任兩場）</div>
